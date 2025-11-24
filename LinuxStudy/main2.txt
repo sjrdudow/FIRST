@@ -1,0 +1,14 @@
+import run_image_segmentation as ims
+
+def start_classification(optimizer, is_new_method, cnn_model):
+    BATCH_SIZE = 128
+    MAX_EPOCH = 200
+    NUM_CLASSES = 10
+    BENCHMARK_SET = 'cifar10'
+    ic.run_cnn_experiment(dataset_name=BENCHMARK_SET, num_class=NUM_CLASSES, cnn_model=cnn_model,
+                          optimizer_model=optimizer, batch_size=BATCH_SIZE, max_epochs=MAX_EPOCH,
+                          is_new_optim=is_new_method)
+
+if __name__ == '__main__':
+    start_classification("aaaaa", True, 'resnet121') 
+  
